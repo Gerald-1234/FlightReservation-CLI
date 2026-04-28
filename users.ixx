@@ -17,10 +17,13 @@ protected:
 	User();
 	User(const std::string& aName, const std::string& aPassword, const std::string& aPhoneNumber = "", char aGender = '\0', const std::string& anAddress = "", const std::string& anEmail = "", const NextOfKin& aNextOfKin = {});
 	User(int aUserID, const std::string& aName, const std::string& aPassword, const std::string& aPhoneNumber = "", char aGender = '\0', const std::string& anAddress = "", const std::string& anEmail = "", const NextOfKin& aNextOfKin = {});
+
+	// Protected members for derived classes to access hashes
+	std::string passwordHash{};
+	std::string passwordSalt{};
 private:
 	int userID{};
 	std::string name{};
-	std::string password{};
 	std::string phoneNumber{};
 	char gender{};
 	std::string address{};
@@ -39,6 +42,11 @@ public:
 	bool setEmail(std::string anEmail);
 	void setNextOfKin(NextOfKin aNextOfKin);
 	bool validatePassword(std::string aPassword) const;
+	// Internal use only: set pre-computed hash and salt (for loading from storage)
+	void setPasswordHashAndSalt(const std::string& hash, const std::string& salt) {
+		passwordHash = hash;
+		passwordSalt = salt;
+	}
 
 	// Getters
 	int getUserID() const;
@@ -46,7 +54,8 @@ public:
 	std::string getPhoneNumber() const;
 	char getGender() const;
 	std::string getAddress() const;
-	std::string getPassword() const;
+	std::string getPasswordHash() const;
+	std::string getPasswordSalt() const;
 	std::string getEmail() const;
 	NextOfKin getNextOfKin() const;
 

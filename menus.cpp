@@ -487,7 +487,7 @@ void runCustomerSession(Customer& customer, const std::string& username) {
 		std::cout << "Do you want to perform another transaction? (Y/N): ";
 		std::cin >> customerRunAgain;
 		customerRunAgain = std::toupper(customerRunAgain);
-		std::cout << std::endl;
+		std::cout << std::endl << std::endl;
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	}
 	while (customerRunAgain == 'Y');
@@ -1130,18 +1130,17 @@ void runAdminSession(Admin& admin, const std::string& username) {
 		std::cout << "\nDo you want to perform another transaction? (Y/N): ";
 		std::cin >> adminRunAgain;
 		adminRunAgain = std::toupper(adminRunAgain);
-		std::cout << std::endl;
+		std::cout << std::endl << std::endl;
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	}
 	while (adminRunAgain == 'Y');
 }
 
 void runMainMenu() {
-	std::cout << "\nWelcome to Nexora Airways" << std::endl;
+	std::cout << "Welcome to Nexora Airways" << std::endl;
 	char runAgain = 'Y';
 	while (runAgain == 'Y') {
 		std::string username, password;
-		std::cout << std::endl;
 		std::cout << "1. Create an account\n2. Login\n3. Exit" << std::endl;
 		std::cout << "Please select an option: ";
 		int choice = getValidInt();
@@ -1193,7 +1192,7 @@ void runMainMenu() {
 		std::cin >> runAgain;
 		runAgain = std::toupper(runAgain);
 		std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-		std::cout << std::endl;
+		std::cout << std::endl << std::endl;
 
 		saveAccounts();
 		saveFlights();
