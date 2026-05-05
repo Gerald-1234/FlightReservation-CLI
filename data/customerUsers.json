@@ -1,0 +1,31 @@
+{
+    "Accounts": [
+        {
+            "Account Balance": 1000.0,
+            "Account Creation Date": "2026-04-28",
+            "Account name": "Shadow as customer.",
+            "Address": "95 Limca road, Nkpor",
+            "Booked Flights": [],
+            "Email": "successkalu12345@gmail.com",
+            "Gender": 77,
+            "Loyalty Points": 0.0,
+            "Next of Kin": {
+                "Address": "Same",
+                "Name": "Bro. Uche",
+                "Phone Number": "2349014005117",
+                "Relationship": "Brother"
+            },
+            "Password Hash": "2f01e5e377b1f7f1e8e90585108741f11b83b5fa4fa54a9dee9c375e109ec05acd7ffc55acaf9674a8d1e6f11ea7c27b9f559244f31c1d215fe74226ecd69176184c7d9a9d54cb2dfd43cab863c2077266cc8e117cd139ef0367eb221d9fb156aec7d0d0179cfdf3c01c8fe479656386959caa8b70ba90fa7750ffa596480f30",
+            "Password Salt": "c896a75a124ec1ea",
+            "Phone number": "2348122997160",
+            "Total Bookings": 0,
+            "Transaction History": [
+                "Deposit (Paystack): NGN50000.00 | Ref: m7qi0u6r9c",
+                "Deposit (Paystack): NGN400.00 | Ref: 8dfjjwnhk3",
+                "Withdrawal: - NGN50000.00",
+                "Deposit (Paystack): NGN600.00 | Ref: ktwwik815q"
+            ],
+            "Username": "Shadow as customer."
+        }
+    ]
+}

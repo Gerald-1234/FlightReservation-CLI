@@ -1,0 +1,11 @@
+* text=auto
+*.h text
+*.cpp text
+*.hpp text
+*.json text
+*.txt text
+*.slnx      merge=binary
+*.vcxproj   merge=binary
+*.exe       merge=binary
+*.dll       merge=binary
+*.bat       merge=binary
