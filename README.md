@@ -106,37 +106,7 @@ The system uses Argon2id, an industry-standard password hashing algorithm, to se
 - No plaintext password storage anywhere in the system
 - Automatic migration from legacy password format
 
----
-
-## Project Structure
-
-'''
-FlightReservation-CLI/
-│
-├── src/
-│   ├── *.ixx
-│   └── *.cpp
-│
-├── include/
-│   ├── curl/
-│   ├── *.h
-│   └── *.hpp
-│
-├── build/
-│   ├── FlightReservation-CLI.exe
-│   ├── *.dll
-│   └── build.bat
-│
-├── data/
-│   └── *.json
-│
-├── config/
-│   └── paystack_secret.txt
-│
-├── README.md
-├── FlightReservation-CLI.slnx
-└── FlightResevation.vcproj*
-'''
+--- 
 
 ## Dependencies
 
@@ -148,7 +118,6 @@ FlightReservation-CLI/
 - C++20 modules support
 
 ---
-
 ## Build System
 
 The project includes an automated build script (build.bat) for Windows which workd if MSVC compiler is already installed.
